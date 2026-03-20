@@ -1,0 +1,109 @@
+:root {
+  /* Paleta de Colores (Mantenemos tus variables) */
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --accent: #aa3bff;
+  --shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px;
+
+  /* Tipografía */
+  --sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* Fuente base responsiva */
+  font-size: clamp(16px, 1.2vw, 18px);
+  font-family: var(--sans);
+  line-height: 1.6;
+  color: var(--text);
+  background-color: var(--bg);
+
+  color-scheme: light dark;
+}
+
+/* Modo Oscuro Automático */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: #111827;
+    /* Un oscuro más profundo y moderno */
+    --border: #1f2937;
+    --accent: #c084fc;
+  }
+}
+
+/* Reset Pro */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg);
+}
+
+/* Tipografía */
+h1 {
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  color: var(--text-h);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  max-width: 65ch;
+  /* Evita líneas demasiado largas para leer mejor */
+  margin-bottom: 1.25rem;
+}
+
+/* Layout Principal (Sin rayas laterales) */
+#app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contenedor de contenido */
+.main-content {
+  width: 100%;
+  max-width: 1200px;
+  /* Ancho máximo de contenido */
+  margin: 0 auto;
+  padding: clamp(1rem, 5vw, 4rem);
+}
+
+/* Hero Section */
+.hero {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Grid Moderno (Sin bordes, solo separación) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  /* Espaciado entre elementos en lugar de bordes */
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.card {
+  padding: 2rem;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+}
