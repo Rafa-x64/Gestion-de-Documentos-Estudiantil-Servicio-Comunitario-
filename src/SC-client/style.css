@@ -5,14 +5,12 @@
   --bg: #fff;
   --border: #e5e4e7;
   --accent: #aa3bff;
-  --shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px;
 
   /* Tipografía */
   --sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 
   /* Fuente base responsiva */
   font-size: clamp(16px, 1.2vw, 18px);
-  font-family: var(--sans);
   line-height: 1.6;
   color: var(--text);
   background-color: var(--bg);
@@ -40,23 +38,13 @@
 }
 
 body {
-  min-height: 100vh;
-  background-color: var(--bg);
-}
-
-/* Tipografía */
-h1 {
-  font-size: clamp(2.5rem, 8vw, 4rem);
-  color: var(--text-h);
-  font-weight: 800;
-  line-height: 1.1;
-  margin-bottom: 1.5rem;
-}
-
-p {
-  max-width: 65ch;
-  /* Evita líneas demasiado largas para leer mejor */
-  margin-bottom: 1.25rem;
+    min-height: 100vh;
+    background-color: var(--bg);
+    font-family: "Google Sans", sans-serif !important;
+    font-optical-sizing: auto !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    font-variation-settings: "GRAD" 0 !important;
 }
 
 /* Layout Principal (Sin rayas laterales) */
@@ -70,40 +58,8 @@ p {
 /* Contenedor de contenido */
 .main-content {
   width: 100%;
-  max-width: 1200px;
+  max-width: 100%;
   /* Ancho máximo de contenido */
   margin: 0 auto;
-  padding: clamp(1rem, 5vw, 4rem);
-}
-
-/* Hero Section */
-.hero {
-  padding: 100px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-/* Grid Moderno (Sin bordes, solo separación) */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  /* Espaciado entre elementos en lugar de bordes */
-  width: 100%;
-  margin-top: 3rem;
-}
-
-.card {
-  padding: 2rem;
-  background: transparent;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  transition: transform 0.2s, border-color 0.2s;
-}
-
-.card:hover {
-  border-color: var(--accent);
-  transform: translateY(-4px);
+  padding: 0px;
 }
