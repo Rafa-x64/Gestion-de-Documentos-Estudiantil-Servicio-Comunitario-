@@ -1,7 +1,7 @@
 <script setup lang='ts'>
 import { ref } from 'vue';
-import Header from '../../dashboard/components/Header.vue'
-import Footer from '../../dashboard/components/Footer.vue';
+import Header from '../../../components/Header.vue'
+import Footer from '../../../components/Footer.vue';
 import CreateForm from '../../dashboard/components/CreateForm.vue';
 import List from '../../dashboard/components/List.vue'
 </script>

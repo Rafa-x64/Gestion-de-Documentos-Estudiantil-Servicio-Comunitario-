@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 import Form from '../../register/components/Form.vue';
 import Image from '../../register/components/Image.vue';
-import Footer from '../../register/components/Footer.vue';
+import Footer from '../../../components/Footer.vue';
 </script>
 <template>
     <div class="container-fluid d-flex flex-row justify-content-center align-items-center p-0 m-0">
