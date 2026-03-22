@@ -10,7 +10,7 @@ import { ref } from 'vue';
     </div>
 </template>
 <style scooped>
-[class^="container"] {
+/*[class^="container"] {
     border: 1px solid greenyellow;
 }
 
@@ -20,5 +20,5 @@ import { ref } from 'vue';
 
 [class^="row"] {
     border: 1px solid red;
-}
+}*/
 </style>
