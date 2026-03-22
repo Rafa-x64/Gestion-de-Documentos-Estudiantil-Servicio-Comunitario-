@@ -25,6 +25,10 @@ import { ref } from 'vue';
                             </div>
                         </div>
                         <div class="col-12 p-0 m-0 d-flex flex-row justify-content-between align-items-center">
+                            <label for="" class="form-label text-muted p-0 m-0">Telefono: </label>
+                            <input type="mail" name="" id="" class="form-control w-75">
+                        </div>
+                        <div class="col-12 p-0 m-0 d-flex flex-row justify-content-between align-items-center">
                             <label for="" class="form-label text-muted p-0 m-0">Correo: </label>
                             <input type="mail" name="" id="" class="form-control w-75">
                         </div>
